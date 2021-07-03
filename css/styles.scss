@@ -1,61 +1,115 @@
-$color-primary: #3046C5;
-$color-secondary: #5637dd;
-$color-pale: #CEC8FF;
-$color-mid: #901CAD;
-$color-dark: #60106b;
-$color-black-transparent: rgba(0, 0, 0, 0.5);
-$color-teal: #17A2B8;
+$color-primary: #1a1a1a; //not quite black
+$color-secondary: #F5F5F5; //white smoke
+$color-pale: #BEBEBE;//x11 gray
+$color-mid: #484848;//dark gray
+$color-dark: #000000;//black
+//$color-black-transparent: #1a1a1a;
+$color-nav: #303030;
 
 
-$body-font: "Open Sans", sans-serif;
-$header-font: "Lobster", cursive;
+$body-font: "Special Elite", cursive;
+$header-font: "Special Elite", cursive;
 
 body {
     font-family: $body-font;
+    background: $color-primary;
 }
 
 h1, h2, h3 {
     font-family: $header-font;
+    color: $color-secondary;
 }
 
 h2 {
     color: $color-primary;
 }
 
+h2 {
+    background: $color-dark;
+    color: $color-pale;
+    float: left;
+}
+
+p {
+    color: $color-pale;
+    clear: left;
+    float: left;
+}
+
+img {
+    background: $color-dark;
+}
+
+li {
+    color: $color-mid;
+}
+
 header {
+    h1 {
+        color: $color-secondary;
+    }
     h2 {
         color: $color-pale;
     }
 }
 
+thead {
+    background: $color-mid;
+    color: $color-dark;
+}
+
+tbody {
+    background: $color-pale;
+    color: $color-dark;
+}
+
 .site-footer {
-    background-image: linear-gradient($color-pale, white);
+    background-image: linear-gradient(to bottom, $color-primary, $color-dark);
     padding: 20px 0;
+    color: $color-pale;
 }
 
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
-    color: white;
+    background-image: linear-gradient(to top, $color-primary, $color-dark);
+    color: $color-pale;
+}
+
+.card {
+    background: $color-mid;
+    color: $color-dark;
+}
+
+.card-header {
+    color: $color-secondary;
+}
+
+.card-body {
+    background: $color-pale;
+}
+
+.breadcrumb {
+    background: $color-primary;
 }
 
 .row-content {
-    padding: 50px 0;
+    padding: 5px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
+    color: $color-pale;
 }
 
 .navbar-dark {
-    background-color: $color-mid;
+    background-color: $color-primary;
 }
 
 .carousel-caption {
-    background-color: $color-black-transparent;
+    background-color: $color-pale;
 }
 
 .carousel {
-    border: solid $color-secondary;
+    border: solid $color-primary;
 }
 
 a, a:hover {
@@ -69,19 +123,17 @@ a, a:hover {
     bottom: 0;
     z-index: 100;
 }
-//Task 3 6/26/21
 //modal scss replacing bs, nested to target respective div classes
 #reserveModal {
     .modal-header {
-        background-color: $color-teal;
-        color: white;
+        background-color: $color-mid;
+        color: $color-secondary;
     }
 }
 
 #loginModal {
     .modal-header {
         background-color: $color-mid;
-        color: white;
+        color: $color-pale;
     }
 }
-//Fin

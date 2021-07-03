@@ -1,38 +1,82 @@
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Special Elite", cursive;
+  background: #1a1a1a; }
 
 h1, h2, h3 {
-  font-family: "Lobster", cursive; }
+  font-family: "Special Elite", cursive;
+  color: #F5F5F5; }
 
 h2 {
-  color: #3046C5; }
+  color: #1a1a1a; }
+
+h2 {
+  background: #000000;
+  color: #BEBEBE;
+  float: left; }
+
+p {
+  color: #BEBEBE;
+  clear: left;
+  float: left; }
+
+img {
+  background: #000000; }
+
+li {
+  color: #484848; }
+
+header h1 {
+  color: #F5F5F5; }
 
 header h2 {
-  color: #CEC8FF; }
+  color: #BEBEBE; }
+
+thead {
+  background: #484848;
+  color: #000000; }
+
+tbody {
+  background: #BEBEBE;
+  color: #000000; }
 
 .site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
-  padding: 20px 0; }
+  background-image: linear-gradient(to bottom, #1a1a1a, #000000);
+  padding: 20px 0;
+  color: #BEBEBE; }
 
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
-  color: white; }
+  background-image: linear-gradient(to top, #1a1a1a, #000000);
+  color: #BEBEBE; }
+
+.card {
+  background: #484848;
+  color: #000000; }
+
+.card-header {
+  color: #F5F5F5; }
+
+.card-body {
+  background: #BEBEBE; }
+
+.breadcrumb {
+  background: #1a1a1a; }
 
 .row-content {
-  padding: 50px 0;
+  padding: 5px 0;
   border-bottom: 1px ridge;
-  min-height: 200px; }
+  min-height: 200px;
+  color: #BEBEBE; }
 
 .navbar-dark {
-  background-color: #901CAD; }
+  background-color: #1a1a1a; }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: #BEBEBE; }
 
 .carousel {
-  border: solid #5637dd; }
+  border: solid #1a1a1a; }
 
 a, a:hover {
   color: inherit;
@@ -45,9 +89,9 @@ a, a:hover {
   z-index: 100; }
 
 #reserveModal .modal-header {
-  background-color: #17A2B8;
-  color: white; }
+  background-color: #484848;
+  color: #F5F5F5; }
 
 #loginModal .modal-header {
-  background-color: #901CAD;
-  color: white; }
+  background-color: #484848;
+  color: #BEBEBE; }
